@@ -1,0 +1,10 @@
+<View>
+  <!-- Control tag for region labels -->
+    <TimeSeriesLabels name="label" toName="ts">
+      <Label value="sıkışma" background="#FFA39E"/>
+    </TimeSeriesLabels>
+    <!-- Object tag for time series data source -->
+      <TimeSeries name="ts" valueType="url" value="$timeseriesUrl" sep="," timeColumn="timestamp" timeFormat="%Y-%m-%d %H:%M:%S" timeDisplayFormat="%Y-%m-%d %H:%M:%S">
+        <Channel column="bid" units="Price" displayFormat=",.2f" strokeColor="#1f77b4" legend="Price" height="600" fixedscale="true"/>
+      </TimeSeries>
+    </View>
